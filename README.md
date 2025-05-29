@@ -1,13 +1,13 @@
-# ❤️ Heart Disease Prediction Project
+# Heart Disease Prediction Project
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Accuracy](https://img.shields.io/badge/Accuracy-84.9%25-brightgreen.svg)](#-evaluation-metrics)
-[![Dataset](https://img.shields.io/badge/Dataset-Framingham%20Heart%20Study-orange.svg)](#-dataset)
+[![Accuracy](https://img.shields.io/badge/Accuracy-84.9%25-brightgreen.svg)](#evaluation-metrics)
+[![Dataset](https://img.shields.io/badge/Dataset-Framingham%20Heart%20Study-orange.svg)](#dataset)
 
 Predict the 10-year risk of coronary heart disease (CHD) using machine learning—because your heart deserves a heads-up.
 
-## 🎯 Project Goals
+## Project Goals
 
 This machine learning project aims to:
 - **Predict** 10-year coronary heart disease risk with high accuracy
@@ -15,7 +15,7 @@ This machine learning project aims to:
 - **Provide** actionable insights for early intervention
 - **Demonstrate** data science techniques in healthcare applications
 
-## 🧠 Overview
+## Overview
 
 This project leverages the renowned **Framingham Heart Study** dataset to build a predictive model for coronary heart disease over a 10-year period. The Framingham study, one of the longest-running epidemiological studies, provides invaluable insights into cardiovascular risk factors. Our model combines demographic, behavioral, and clinical features to deliver data-driven cardiac risk assessments.
 
@@ -25,27 +25,27 @@ This project leverages the renowned **Framingham Heart Study** dataset to build 
 - **13 clinical features** analyzed
 - **Logistic regression** with feature standardization
 
-## 📊 Dataset
+## Dataset
 
 The dataset `framingham.csv` contains comprehensive health data from the Framingham Heart Study participants:
 
 ### Feature Categories
 
-**👥 Demographics**
+**Demographics**
 - `sex_male` - Gender (1 = male, 0 = female)
 - `age` - Age in years
 
-**🚬 Behavioral Risk Factors**
+**Behavioral Risk Factors**
 - `currentSmoker` - Current smoking status (1 = yes, 0 = no)
 - `cigsPerDay` - Number of cigarettes smoked per day
 
-**🏥 Medical History**
+**Medical History**
 - `BPMeds` - Blood pressure medication usage (1 = yes, 0 = no)
 - `prevalentStroke` - History of stroke (1 = yes, 0 = no)
 - `prevalentHyp` - History of hypertension (1 = yes, 0 = no)
 - `diabetes` - Diabetes status (1 = yes, 0 = no)
 
-**🔬 Clinical Measurements**
+**Clinical Measurements**
 - `totChol` - Total cholesterol level (mg/dL)
 - `sysBP` - Systolic blood pressure (mmHg)
 - `diaBP` - Diastolic blood pressure (mmHg)
@@ -53,7 +53,7 @@ The dataset `framingham.csv` contains comprehensive health data from the Framing
 - `heartRate` - Heart rate (beats per minute)
 - `glucose` - Glucose level (mg/dL)
 
-**🎯 Target Variable**
+**Target Variable**
 - `TenYearCHD` - 10-year CHD risk (1 = developed CHD, 0 = did not)
 
 ### Dataset Statistics
@@ -62,7 +62,7 @@ The dataset `framingham.csv` contains comprehensive health data from the Framing
 - **CHD cases**: 572 (15.2% - indicating class imbalance)
 - **Missing data**: Handled through row removal (489 rows removed)
 
-## 🛠 Data Preprocessing Pipeline
+## Data Preprocessing Pipeline
 
 Our preprocessing ensures data quality and model readiness:
 
@@ -82,7 +82,7 @@ Our preprocessing ensures data quality and model readiness:
 - Checked for outliers and anomalies
 - Ensured balanced train-test distribution
 
-## 🔎 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 ### Key Insights
 - **Sample size**: 3,751 participants after cleaning
@@ -95,7 +95,7 @@ Our preprocessing ensures data quality and model readiness:
 - **Trend analysis**: Line plots for CHD occurrence patterns
 - **Class distribution**: Visual representation of the 85% healthy vs 15% CHD split
 
-## 🧪 Model Development
+## Model Development
 
 ### Algorithm Selection
 - **Primary model**: Logistic Regression
@@ -113,7 +113,7 @@ Our preprocessing ensures data quality and model readiness:
 - **Training time**: < 1 second
 - **Model size**: Lightweight and deployable
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 ### Classification Report
 
@@ -126,12 +126,12 @@ Our preprocessing ensures data quality and model readiness:
 
 ### Performance Analysis
 
-**✅ Strengths**
+**Strengths**
 - **High overall accuracy** (84.9%)
 - **Excellent at identifying healthy individuals** (99% recall for Class 0)
 - **Low false positive rate** for CHD predictions
 
-**⚠️ Areas for Improvement**
+**Areas for Improvement**
 - **Poor CHD detection** (8% recall for Class 1)
 - **Class imbalance impact** - model bias toward majority class
 - **Low F1-score for CHD cases** indicates room for improvement
@@ -144,7 +144,7 @@ No CHD         942       9
 CHD            161      14
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -155,8 +155,8 @@ CHD            161      14
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/heart-disease-prediction.git
-   cd heart-disease-prediction
+   git clone https://github.com/Pynthamil/Heart-Disease-Prediction.git
+   cd Heart-Disease-Prediction
    ```
 
 2. **Create virtual environment** (recommended)
@@ -199,10 +199,10 @@ CHD            161      14
    print(f"10-year CHD risk: {risk_probability:.2%}")
    ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-heart-disease-prediction/
+Heart-Disease-Prediction/
 ├── data/
 │   └── framingham.csv          # Dataset
 ├── notebooks/
@@ -220,7 +220,7 @@ heart-disease-prediction/
 └── LICENSE                     # MIT License
 ```
 
-## 🌱 Future Roadmap
+## Future Roadmap
 
 ### Model Improvements
 - **Algorithm diversification**: Random Forest, XGBoost, Neural Networks
@@ -252,7 +252,7 @@ heart-disease-prediction/
 - **Multi-modal data**: Incorporate imaging, genetic data
 - **Real-world validation**: Prospective clinical studies
 
-## 🔬 Clinical Significance
+## Clinical Significance
 
 ### Risk Factors Identified
 Our model highlights key predictors of CHD risk:
@@ -269,7 +269,7 @@ Our model highlights key predictors of CHD risk:
 - **Patient counseling**: Data-driven risk communication
 - **Population health**: Epidemiological insights for public health policy
 
-## 📦 Dependencies
+## Dependencies
 
 ### Core Libraries
 ```
@@ -297,7 +297,7 @@ flake8>=3.9.0          # Linting
 pre-commit>=2.15.0     # Git hooks
 ```
 
-## 📊 Model Card
+## Model Card
 
 | Attribute | Value |
 |-----------|-------|
@@ -310,7 +310,7 @@ pre-commit>=2.15.0     # Git hooks
 | **Intended Use** | Research and educational purposes |
 | **Limitations** | Not for clinical diagnosis |
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
@@ -328,13 +328,13 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 - Web application development
 - Clinical validation studies
 
-## 📚 References
+## References
 
 1. Kannel, W.B., et al. (1961). Factors of risk in the development of coronary heart disease. *Annals of Internal Medicine*, 55(1), 33-50.
 2. D'Agostino, R.B., et al. (2008). General cardiovascular risk profile for use in primary care. *Circulation*, 117(6), 743-753.
 3. Framingham Heart Study. (2021). Risk assessment tool. Retrieved from [framinghamheartstudy.org](https://www.framinghamheartstudy.org)
 
-## 📞 Support
+## Support
 
 - **Issues**: [GitHub Issues](https://github.com/Pynthamil/Heart-Disease-Prediction/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/Pynthamil/Heart-Disease-Prediction/discussions)
