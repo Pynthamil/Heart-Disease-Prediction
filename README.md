@@ -1,7 +1,6 @@
 # Heart Disease Prediction Project
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Accuracy](https://img.shields.io/badge/Accuracy-84.9%25-brightgreen.svg)](#evaluation-metrics)
 [![Dataset](https://img.shields.io/badge/Dataset-Framingham%20Heart%20Study-orange.svg)](#dataset)
 
