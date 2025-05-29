@@ -173,11 +173,11 @@ CHD            161      14
 
 4. **Run the analysis**
    ```bash
-   jupyter notebook heart_disease_prediction.ipynb
+   jupyter notebook HEART_DISEASE_PREDICTION.ipynb
    ```
    Or execute all cells programmatically:
    ```bash
-   python heart_disease_prediction.py
+   python HEART_DISEASE_PREDICTION.py
    ```
 
 5. **Make predictions**
